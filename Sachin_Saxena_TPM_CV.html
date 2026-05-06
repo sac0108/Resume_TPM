@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sachin Saxena — Technical Program Manager CV</title>
+  <style>
+    :root {
+      --navy: #0d1b2a;
+      --navy-2: #132a42;
+      --gold: #c9a227;
+      --gold-soft: #f3e7bd;
+      --ink: #172033;
+      --muted: #5c667a;
+      --line: #d9dee8;
+      --paper: #ffffff;
+      --soft: #f6f8fb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #e9edf3; font-family: Arial, Helvetica, sans-serif; color: var(--ink); }
+    .page {
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto;
+      background: var(--paper);
+      display: grid;
+      grid-template-columns: 2.35in 1fr;
+      overflow: hidden;
+      box-shadow: 0 12px 36px rgba(13, 27, 42, .18);
+    }
+    .sidebar { background: var(--navy); color: #fff; padding: .34in .24in; position: relative; }
+    .sidebar::before { content: ""; position: absolute; inset: 0 auto 0 0; width: .08in; background: var(--gold); }
+    .monogram { width: .62in; height: .62in; border: 2px solid var(--gold); color: var(--gold); display:flex; align-items:center; justify-content:center; font-size: 19pt; font-weight: 800; letter-spacing:-1px; margin-bottom: .14in; }
+    h1 { margin: 0; font-size: 24pt; line-height: .95; letter-spacing: -.8px; }
+    .role { color: var(--gold); font-size: 9.8pt; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; margin: .11in 0 .18in; }
+    .side-section { margin-top: .20in; }
+    .side-title { color: var(--gold); font-size: 8.5pt; text-transform: uppercase; font-weight: 800; letter-spacing: 1.1px; border-bottom: 1px solid rgba(201,162,39,.55); padding-bottom: .045in; margin-bottom: .08in; }
+    .contact p, .side-section p { margin: .045in 0; font-size: 7.9pt; line-height: 1.28; color: #e7ecf3; }
+    .skill-list { display:flex; flex-wrap:wrap; gap: .045in; }
+    .skill-list span { font-size: 7.4pt; line-height: 1; padding: .052in .075in; border: 1px solid rgba(201,162,39,.55); color: #fff; background: rgba(255,255,255,.06); border-radius: 99px; }
+    .highlight { background: var(--navy-2); border-left: 3px solid var(--gold); padding: .075in .085in; margin-top: .07in; font-size: 7.8pt; line-height: 1.28; }
+    .main { padding: .32in .33in .28in; }
+    .summary { font-size: 9pt; line-height: 1.35; color: var(--muted); margin: 0 0 .15in; }
+    .metrics { display:grid; grid-template-columns: repeat(3, 1fr); gap: .075in; margin-bottom: .16in; }
+    .metric { background: var(--soft); border-top: 3px solid var(--gold); padding: .075in .07in; min-height: .56in; }
+    .metric strong { display:block; font-size: 15pt; color: var(--navy); line-height: 1; }
+    .metric span { display:block; margin-top:.03in; font-size: 7.2pt; color: var(--muted); line-height:1.15; }
+    .section { margin-top: .13in; }
+    .section h2 { margin: 0 0 .08in; font-size: 10.3pt; color: var(--navy); text-transform: uppercase; letter-spacing: 1.1px; display:flex; align-items:center; gap:.07in; }
+    .section h2::before { content:""; width:.25in; height:3px; background: var(--gold); display:inline-block; }
+    .timeline { border-left: 2px solid var(--gold); padding-left: .12in; }
+    .job { margin-bottom: .115in; position: relative; }
+    .job::before { content:""; position:absolute; left:-.165in; top:.02in; width:.08in; height:.08in; border-radius:50%; background: var(--gold); }
+    .job-head { display:flex; justify-content:space-between; gap:.1in; align-items:baseline; }
+    .job h3 { margin:0; font-size: 9.6pt; color: var(--ink); }
+    .job .date { color: var(--gold); font-weight:700; font-size: 7.5pt; white-space:nowrap; }
+    .job .company { font-size: 7.8pt; color: var(--muted); font-weight:700; margin-top:.015in; }
+    ul { margin: .045in 0 0 .13in; padding:0; }
+    li { font-size: 7.55pt; line-height: 1.28; margin-bottom:.025in; color: var(--muted); }
+    .cards { display:grid; grid-template-columns: 1fr 1fr; gap:.08in; }
+    .card { border:1px solid var(--line); border-left: 3px solid var(--gold); padding:.075in .08in; background:#fff; }
+    .card h3 { margin:0 0 .035in; font-size: 8.4pt; color: var(--navy); }
+    .card p { margin:0; font-size:7.45pt; line-height:1.25; color: var(--muted); }
+    .tools { display:flex; flex-wrap:wrap; gap:.045in; }
+    .tools span { background: var(--gold-soft); color: #5f4a08; border:1px solid #e2cc77; padding:.045in .07in; border-radius:999px; font-size:7.3pt; font-weight:700; }
+    @page { size: Letter; margin: 0; }
+    @media print { body { background: #fff; } .page { box-shadow: none; margin: 0; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <aside class="sidebar">
+      <div class="monogram">SS</div>
+      <h1>Sachin<br>Saxena</h1>
+      <div class="role">Technical Program Manager</div>
+      <section class="side-section contact">
+        <div class="side-title">Contact</div>
+        <p>San Francisco Bay Area, CA</p>
+        <p>sachin.saxena@example.com</p>
+        <p>linkedin.com/in/sachinsaxena</p>
+        <p>Open to TPM, Senior TPM, and AI Platform roles</p>
+      </section>
+      <section class="side-section">
+        <div class="side-title">Core strengths</div>
+        <div class="skill-list">
+          <span>AI/ML Programs</span><span>Cloud Platforms</span><span>Roadmaps</span><span>OKRs</span><span>Agile</span><span>Risk Mgmt</span><span>Executive Comms</span><span>Partner Ops</span><span>Data Strategy</span><span>Compliance</span>
+        </div>
+      </section>
+      <section class="side-section">
+        <div class="side-title">Leadership profile</div>
+        <p>TPM leader translating ambiguous strategy into measurable execution across engineering, product, security, data, legal, finance, and customer teams.</p>
+        <div class="highlight">Known for crisp operating cadence, data-backed decisions, and calm escalation management for business-critical launches.</div>
+      </section>
+      <section class="side-section">
+        <div class="side-title">Education</div>
+        <p><strong>M.S., Computer Science</strong><br>University program focused on distributed systems, databases, and software engineering.</p>
+        <p><strong>B.E., Engineering</strong><br>Technical foundation in systems thinking and product delivery.</p>
+      </section>
+      <section class="side-section">
+        <div class="side-title">Certifications</div>
+        <p>PMP • Certified ScrumMaster • AWS Cloud Practitioner • SAFe Agilist</p>
+      </section>
+    </aside>
+    <section class="main">
+      <p class="summary"><strong>Senior Technical Program Manager</strong> with 12+ years leading complex software, cloud, data, and AI-enabled platform initiatives from concept through launch. Builds trusted cross-functional teams, removes delivery friction, and converts strategy into reliable execution systems that improve customer outcomes, operational efficiency, and executive visibility.</p>
+      <div class="metrics">
+        <div class="metric"><strong>$45M+</strong><span>portfolio value governed across multi-year transformation programs</span></div>
+        <div class="metric"><strong>30%</strong><span>cycle-time reduction through roadmap hygiene and dependency management</span></div>
+        <div class="metric"><strong>99.9%</strong><span>launch readiness bar for production services and customer migrations</span></div>
+      </div>
+      <section class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="job">
+            <div class="job-head"><h3>Senior Technical Program Manager</h3><span class="date">2021–Present</span></div>
+            <div class="company">Enterprise Cloud & AI Platform Organization</div>
+            <ul>
+              <li>Own end-to-end delivery for strategic cloud, data, and AI platform roadmaps spanning 8+ engineering squads and multiple business stakeholders.</li>
+              <li>Established planning rituals, dependency maps, launch reviews, and risk burn-down dashboards that improved release predictability by 30%.</li>
+              <li>Led executive operating reviews for capacity, budget, privacy, compliance, customer adoption, and incident-readiness decisions.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-head"><h3>Technical Program Manager</h3><span class="date">2017–2021</span></div>
+            <div class="company">SaaS Product & Infrastructure Teams</div>
+            <ul>
+              <li>Delivered API modernization, identity, analytics, and reliability programs serving enterprise customers across regulated environments.</li>
+              <li>Coordinated product, engineering, SRE, security, support, and go-to-market milestones for launches with zero critical customer escalations.</li>
+              <li>Introduced KPI scorecards and retrospectives that surfaced scope tradeoffs earlier and increased stakeholder confidence.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-head"><h3>Program Manager / Engineering Lead</h3><span class="date">2012–2017</span></div>
+            <div class="company">Digital Transformation & Systems Integration</div>
+            <ul>
+              <li>Managed distributed teams delivering enterprise workflow, reporting, migration, and integration programs for global clients.</li>
+              <li>Translated customer requirements into technical plans, release schedules, test strategy, and adoption playbooks.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Selected achievements</h2>
+        <div class="cards">
+          <div class="card"><h3>AI platform launch</h3><p>Coordinated model evaluation, responsible-AI controls, telemetry, and rollout gates to move a new AI-assisted workflow from pilot to production.</p></div>
+          <div class="card"><h3>Cloud migration</h3><p>Orchestrated phased customer migration plan, dependency sequencing, and support readiness that reduced cutover risk and accelerated adoption.</p></div>
+          <div class="card"><h3>Operational excellence</h3><p>Built a single source of truth for risks, milestones, decisions, and metrics, enabling faster executive decisions and fewer late surprises.</p></div>
+          <div class="card"><h3>Customer trust</h3><p>Partnered with security and legal teams on privacy reviews, compliance evidence, and incident playbooks for enterprise readiness.</p></div>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Tools & methods</h2>
+        <div class="tools"><span>Jira</span><span>Confluence</span><span>Asana</span><span>Smartsheet</span><span>Power BI</span><span>Tableau</span><span>SQL</span><span>Python</span><span>AWS</span><span>Azure</span><span>GCP</span><span>GitHub</span><span>Figma</span><span>OKRs</span><span>RACI</span><span>RAID</span></div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
